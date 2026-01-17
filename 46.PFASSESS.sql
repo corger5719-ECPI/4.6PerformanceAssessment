@@ -1,4 +1,4 @@
-(13-3)
+-- Cora Germany (13-3)
 
 SELECT
     table1.word,
@@ -9,7 +9,7 @@ ON SUBSTR(table1.word, 1, 1) = SUBSTR(table2.word, 1, 1)
 ORDER BY NVL(table1.word, table2.word);
 
 
-(13-4)
+-- Cora Germany (13-4)
 
 SELECT
     table1.word,
@@ -19,8 +19,7 @@ FULL OUTER JOIN table2
 ON SUBSTR(table1.word, 1, 1) = SUBSTR(table2.word, 1, 1)
 ORDER BY NVL(table1.word, table2.word);
 
-
-(13-5)
+--Cora Germany (13-5)
 
 SELECT
     table1.word,
@@ -30,7 +29,7 @@ INNER JOIN table2
 ON SUBSTR(table1.word, 1, 1) = SUBSTR(table2.word, 1, 1)
 ORDER BY table1.word, table2.word;
 
-(13-6)
+-- Cora Germany (13-6)
 SELECT
     table1.word,
     table2.word
@@ -39,7 +38,7 @@ INNER JOIN table2
 ON SUBSTR(table1.word, 1, 1) = SUBSTR(table2.word, 1, 1)
 ORDER BY table1.word, table2.word;
 
-(13.9)
+--Cora Germany (13.9)
 SELECT
     t1.adjective,
     t2.animal
